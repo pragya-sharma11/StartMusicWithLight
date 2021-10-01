@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if(event.values[0]>2){
             mp.start();
         }
+        else{
+            mp.pause();
+        }
     }
 
     @Override
