@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
         mp = MediaPlayer.create(this, R.raw.y);
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
         s = sm.getDefaultSensor(Sensor.TYPE_LIGHT);
-
+        sm.registerListener(this, s, SensorManager.SENSOR_DELAY_NORMAL);
     }
 }
